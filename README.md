@@ -9,17 +9,17 @@ The project consists of two main parts:
 
 ## Project Structure
 chatbot_project/
-├── main.py                     # FastAPI application for the chatbot backend
-├── chatbot_model.h5            # Trained Keras neural network model
-├── words.pkl                   # Vocabulary used for bag-of-words
-├── classes.pkl                 # List of intent tags (categories)
-├── intents.json                # Chatbot's knowledge base (intents, patterns, responses)
-├── requirements.txt            # Python dependencies for the FastAPI app
-├── .gitignore                  # Specifies files/folders to ignore in Git
+├── main.py                    
+├── chatbot_model.h5          
+├── words.pkl                   
+├── classes.pkl                 
+├── intents.json                
+├── requirements.txt             
+├── .gitignore                  
 └── static/
-    ├── index.html              # HTML structure for the chatbot interface
-    ├── style.css               # CSS for styling the chatbot interface
-    └── script.js               # JavaScript for frontend interaction with FastAPI
+    ├── index.html              
+    ├── style.css               
+    └── script.js               
 
 ## Setup and Installation
 Follow these steps to set up and run the chatbot on your local machine.
