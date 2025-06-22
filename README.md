@@ -7,7 +7,7 @@ The project consists of two main parts:
 
 **FastAPI Backend & Web Interface**: A Python FastAPI application that serves as the backend for the chatbot, loads the trained model, makes predictions, and provides a simple web interface for user interaction.
 
-##Project Structure
+## Project Structure
 chatbot_project/
 ├── main.py                     # FastAPI application for the chatbot backend
 ├── chatbot_model.h5            # Trained Keras neural network model
@@ -21,17 +21,17 @@ chatbot_project/
     ├── style.css               # CSS for styling the chatbot interface
     └── script.js               # JavaScript for frontend interaction with FastAPI
 
-##Setup and Installation
+## Setup and Installation
 Follow these steps to set up and run the chatbot on your local machine.
 
-###Prerequisites
+### Prerequisites
 Python 3.8+ installed
 
 pip (Python package installer)
 
 git installed (for cloning this repository, if you weren't building from scratch)
 
-###1. Clone the Repository (If starting fresh from GitHub)
+### 1. Clone the Repository (If starting fresh from GitHub)
 If you're setting this up on a new machine from GitHub, first clone the repository:
 
 git clone https://github.com/Hafiz-chemnad/FUTURE_ML_03.git
@@ -39,7 +39,7 @@ cd FUTURE_ML_03 # Or whatever your repository name is
 
 If you followed the previous instructions and are adding README.md to your existing local project, you can skip this step and ensure you are in your chatbot_project directory.
 
-###2. Set up Python Virtual Environment
+### 2. Set up Python Virtual Environment
 It's highly recommended to use a virtual environment to manage dependencies:
 
 python -m venv venv
@@ -48,21 +48,21 @@ python -m venv venv
 # On macOS/Linux:
 source venv/bin/activate
 
-###3. Install Dependencies
+### 3. Install Dependencies
 Install all the required Python libraries using the requirements.txt file:
 
 pip install -r requirements.txt
 
-Note: Ensure the TensorFlow version in requirements.txt matches the version used during model training in Google Colab to avoid compatibility issues.
+**Note: Ensure the TensorFlow version in requirements.txt matches the version used during model training in Google Colab to avoid compatibility issues.**
 
-###4. NLTK Data Download
+### 4. NLTK Data Download
 The main.py script attempts to download necessary NLTK data (punkt, wordnet, averaged_perceptron_tagger) automatically when it starts. If you face any issues, you can manually download them:
 
 python -m nltk.downloader punkt
 python -m nltk.downloader wordnet
 python -m nltk.downloader averaged_perceptron_tagger
 
-###5. Model and Data Files
+### 5. Model and Data Files
 Ensure the following files are present in your project's root directory:
 
 chatbot_model.h5
@@ -75,21 +75,21 @@ intents.json
 
 These files are generated and exported from the Google Colab notebook (Part 1 of the project setup). If you are cloning this repository, they should already be included.
 
-###6. Run the FastAPI Application
+### 6. Run the FastAPI Application
 Once all dependencies are installed and files are in place, start the FastAPI server:
 
 uvicorn main:app --reload
 
 You should see output indicating that the server is running, typically on http://127.0.0.1:8000.
 
-###7. Access the Chatbot
+### 7. Access the Chatbot
 ####Open your web browser and navigate to:
 
 http://127.0.0.1:8000
 
 You will see the chatbot's web interface, and you can start interacting with it!
 
-####How it Works
+#### How it Works
 **Dataset**: The chatbot is trained on a custom dataset (Bitext_Sample_Customer_Service_Testing_Dataset.csv) containing utterance (user queries) and intent (predefined categories).
 
 **intents.json**: This file defines the chatbot's knowledge base, mapping intent tags to patterns (example phrases) and responses. Crucially, the responses for each intent should be manually populated with helpful text relevant to that intent.
