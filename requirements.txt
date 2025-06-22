@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+tensorflow==2.18.0 # IMPORTANT: Use the exact TensorFlow version from your Colab output!
+numpy
+nltk
+pandas # Included for robustness, though might not be strictly needed in main.py
+scikit-learn # Included for robustness, though might not be strictly needed for this specific approach

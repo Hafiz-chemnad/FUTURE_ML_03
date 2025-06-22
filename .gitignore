@@ -1,0 +1,13 @@
+# Python virtual environment
+venv/
+__pycache__/
+
+# NLTK data (if downloaded locally by script)
+nltk_data/
+
+# Logs or temporary files
+*.log
+*.tmp
+
+# Specific to Jupyter/Colab if any stray files were kept
+.ipynb_checkpoints/
