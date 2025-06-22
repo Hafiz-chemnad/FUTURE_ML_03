@@ -83,7 +83,7 @@ uvicorn main:app --reload
 You should see output indicating that the server is running, typically on http://127.0.0.1:8000.
 
 ### 7. Access the Chatbot
-####Open your web browser and navigate to:
+#### Open your web browser and navigate to:
 
 http://127.0.0.1:8000
 
@@ -104,7 +104,8 @@ You will see the chatbot's web interface, and you can start interacting with it!
 
 **HTML, CSS, JavaScript**: A simple web interface allows users to type messages and receive responses from the chatbot.
 
-##Customization
+## Customization
+
 **Update intents.json**: To expand the chatbot's capabilities or refine its responses, modify intents.json. Add new intents, patterns, or more diverse responses for existing ones. After modifying intents.json, you will need to re-run the Colab notebook (especially cells 2 and 3) to retrain the model and export the updated files.
 
 **Train with More Data**: Provide a larger and more diverse dataset to improve the chatbot's accuracy and understanding.
