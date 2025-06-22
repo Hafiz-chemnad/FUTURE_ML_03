@@ -1,4 +1,4 @@
-#AI-Powered Customer Service Chatbot
+# AI-Powered Customer Service Chatbot
 This project implements an AI-powered customer service chatbot using a neural network trained on a dataset of customer service interactions. The chatbot is designed to understand user queries and provide relevant responses or direct users to appropriate services (like contacting a human agent).
 
 The project consists of two main parts:
